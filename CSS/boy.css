@@ -1,0 +1,1163 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*.header{
+    width: 100%;
+    background-color: #ffff;
+    position: fixed;
+    z-index: 1;
+
+}*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Add background color to prevent content from showing through */
+  z-index: 1000; /* Ensure header is on top of other elements */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    padding: 2% 5%;
+    justify-content: space-between;
+    background-color: yellow;
+
+    
+}
+
+
+nav h3{
+    color: black;
+    position: relative;bottom: 4px;
+    padding-left: 110px;
+
+}
+
+
+  #search-bar {
+    padding: 16px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    transition: border-color 0.2s ease-in-out; /* Smooth border color transition */
+    
+  }
+  
+  #search-bar:focus {
+    border-color: #aaa; /* Darker border color on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow on focus */
+  }
+
+  .img-one {
+    background-image: url(../images/img1.avif);
+  }
+  .img-two {
+    background-image: url(../images/img2.jpg);
+  }
+  .img-three {
+    background-image: url(../images/img3.webp);
+  }
+  .img-four {
+    background-image: url(../images/img4.jpg);
+  }
+  .img-five {
+    background-image: url(../images/img5.webp);
+  }
+  .img-six {
+    background-image: url(../images/img6.avif);
+  }
+  .img-seven {
+    background-image: url(../images/img7.jpg);
+  }
+  .img-eight {
+    background-image: url(../images/img8.jpg);
+  }
+  .img-nine {
+    background-image: url(../images/img9.jpg);
+  }
+  .img-ten {
+    background-image: url(../images/img10.jpg);
+  }
+  .img-eleven {
+    background-image: url(../images/img11.png);
+  }
+  .img-twelve {
+    background-image: url(../images/img12.webp);
+  }
+  .img-thirteen {
+    background-image: url(../images/wardro.jpg);
+  }
+  .img-fourteen {
+    background-image: url(../images/img14.jpg);
+  }
+  .img-fifteen {
+    background-image: url(../images/img15.webp);
+  }
+  .img-sixteen {
+    background-image: url(../images/img16.avif);
+  }
+  .img-seventeen {
+    background-image: url(../images/img17.jpeg);
+  }
+  .img-eighteen {
+    background-image: url(../images/img18.avif);
+  }
+  .img-nineteen {
+    background-image: url(../images/img19.webp);
+  }
+  .img-twenty {
+    background-image: url(../images/img20.avif);
+  }
+  .img-twenty-one {
+    background-image: url(../images/img21.jpeg);
+  }
+  .img-twenty-two {
+    background-image: url(../images/img22.jpeg);
+  }
+  .img-twenty-three {
+    background-image: url(../images/img23.webp);
+  }
+  .img-twenty-four {
+    background-image: url(../images/img24.jpeg);
+  }
+  .img-twenty-five {
+    background-image: url(../images/img25.webp);
+  }
+  .img-twenty-six {
+    background-image: url(../images/img26.jpg);
+  }
+  .img-twenty-seven {
+    background-image: url(../images/img27.jpg);
+  }
+  .img-twenty-eight {
+    background-image: url(../images/img28.webp);
+  }
+  .img-twenty-nine {
+    background-image: url(../images/iron.webp);
+  }
+  .img-thirty {
+    background-image: url(../images/rackhangers.avif);
+  }
+  .img-thirty-one {
+    background-image: url(../images/img31.jpg);
+  }
+  .img-thirty-two {
+    background-image: url(../images/IRONING_BOARD_2.webp);
+  }
+
+  /*suits section*/
+  .suit-one {
+    background-image: url(../images/suit1.jpg);
+  }
+  .suit-two {
+    background-image: url(../images/suit2.jpg);
+  }
+  .suit-three {
+    background-image: url(../images/suit3.jpg);
+  }
+  .suit-four {
+    background-image: url(../images/suit4.jpg);
+  }
+  .suit-five {
+    background-image: url(../images/suit5.jpg);
+  }
+  .suit-six {
+    background-image: url(../images/suit6.jpg);
+  }
+  .suit-seven {
+    background-image: url(../images/suit7.jpg);
+  }
+  .suit-eight {
+    background-image: url(../images/suit8.jpg);
+  
+  }
+  .suit-nine {
+    background-image: url(../images/suit9.jpg);
+  }
+  .suit-ten {
+    background-image: url(../images/suit14.jpg);
+  }
+  .suit-eleven {
+    background-image: url(../images/suit15.jpg);
+  
+  }
+
+.suit-twelve {
+  background-image: url(../images/suit17.jpg);
+
+}
+
+/*shorts section*/
+.shorts-one {
+  background-image: url(../images/shorts1.jpg);
+}
+.shorts-two {
+  background-image: url(../images/shorts2.jpg);
+}
+.shorts-three {
+  background-image: url(../images/shorts3.jpg);
+}
+.shorts-four {
+  background-image: url(../images/shorts4.jpg);
+}
+.shorts-five {
+  background-image: url(../images/shorts5.jpg);
+}
+.shorts-six {
+  background-image: url(../images/shorts6.jpg);
+}
+.shorts-seven {
+  background-image: url(../images/shorts7.jpg);
+}
+.shorts-eight {
+  background-image: url(../images/shorts8.jpg);
+
+}
+.shorts-nine {
+  background-image: url(../images/shorts9.jpg);
+}
+.shorts-ten {
+  background-image: url(../images/shorts10.jpg);
+}
+.shorts-eleven {
+  background-image: url(../images/shorts11.jpg);
+
+}
+
+.shorts-twelve {
+background-image: url(../images/shorts12.jpg);
+
+}
+/*shorts ends*/
+
+/*jeans section*/
+.jeans-one {
+  background-image: url(../images/jeans1.jpg);
+}
+.jeans-two {
+  background-image: url(../images/jeans2.jpg);
+}
+.jeans-three {
+  background-image: url(../images/jeans3.jpg);
+}
+.jeans-four {
+  background-image: url(../images/jeans4.jpg);
+}
+.jeans-five {
+  background-image: url(../images/jeans5.jpg);
+}
+.jeans-six {
+  background-image: url(../images/jeans6.jpg);
+}
+.jeans-seven {
+  background-image: url(../images/jeans7.jpg);
+}
+.jeans-eight {
+  background-image: url(../images/jeans8.jpg);
+}
+.jeans-nine {
+  background-image: url(../images/jeans9.jpg);
+}
+.jeans-ten {
+  background-image: url(../images/jeans10.jpg);
+}
+.jeans-eleven {
+  background-image: url(../images/jeans11.jpg);
+}
+.jeans-twelve {
+background-image: url(../images/jeans12.jpg);
+}
+/*jeans send*/
+
+/*hoodies section*/
+.hoodies-one {
+  background-image: url(../images/hoodies1.jpg);
+}
+.hoodies-two {
+  background-image: url(../images/hoodies2.jpg);
+}
+.hoodies-three {
+  background-image: url(../images/hoodies3.jpg);
+}
+.hoodies-four {
+  background-image: url(../images/hoodies4.jpg);
+}
+.hoodies-five {
+  background-image: url(../images/hoodies5.jpg);
+}
+.hoodies-six {
+  background-image: url(../images/hoodies6.jpg);
+}
+.hoodies-seven {
+  background-image: url(../images/hoodies7.jpg);
+}
+.hoodies-eight {
+  background-image: url(../images/hoodies8.jpg);
+}
+.hoodies-nine {
+  background-image: url(../images/hoodies9.jpg);
+}
+.hoodies-ten {
+  background-image: url(../images/hoodies10.jpg);
+}
+.hoodies-eleven {
+  background-image: url(../images/hoodies11.jpg);
+}
+.hoodies-twelve {
+background-image: url(../images/hoodies12.jpg);
+}
+/*hoodies ends*/
+
+/*deninJacket section*/
+.deninJackets-one {
+  background-image: url(../images/denin1.jpg);
+}
+.deninJackets-two {
+  background-image: url(../images/denin2.jpg);
+}
+.deninJackets-three {
+  background-image: url(../images/denin3.jpg);
+}
+.deninJackets-four {
+  background-image: url(../images/denin4.jpg);
+}
+.deninJackets-five {
+  background-image: url(../images/denin5.jpg);
+}
+.deninJackets-six {
+  background-image: url(../images/denin.jpg);
+}
+.deninJackets-seven {
+  background-image: url(../images/dress17.jpg);
+}
+.deninJackets-eight {
+  background-image: url(../images/dress19.jpg);
+}
+.deninJackets-nine {
+  background-image: url(../images/dress20.jpg);
+}
+.deninJackets-ten {
+  background-image: url(../images/dress16.jpg);
+}
+.deninJackets-eleven {
+  background-image: url(../images/dress11.jpg);
+}
+.deninJackets-twelve {
+background-image: url(../images/dress20.jpg);
+}
+/*deninJacket ends*/
+
+/*shirt section*/
+.shirt-one {
+  background-image: url(../images/shirt1.jpg);
+}
+.shirt-two {
+  background-image: url(../images/shirt2.jpg);
+}
+.shirt-three {
+  background-image: url(../images/shirt3.jpg);
+}
+.shirt-four {
+  background-image: url(../images/shirt4.jpg);
+}
+.shirt-five {
+  background-image: url(../images/shirt5.jpg);
+}
+.shirt-six {
+  background-image: url(../images/shirt6.jpg);
+}
+.shirt-seven {
+  background-image: url(../images/shirt7.jpg);
+}
+.shirt-eight {
+  background-image: url(../images/shirt8.jpg);
+
+}
+.shirt-nine {
+  background-image: url(../images/shirt14.jpg);
+}
+.shirt-ten {
+  background-image: url(../images/shirt10.jpg);
+}
+.shirt-eleven {
+  background-image: url(../images/shirt11.jpg);
+
+}
+
+.shirt-twelve {
+background-image: url(../images/shirt12.jpg);
+}
+
+/*shirt ends*/
+
+/*trousers section*/
+.trousers-one {
+  background-image: url(../images/trousers1.jpg);
+}
+.trousers-two {
+  background-image: url(../images/trousers2.jpg);
+}
+.trousers-three {
+  background-image: url(../images/trousers3.jpg);
+}
+.trousers-four {
+  background-image: url(../images/trousers4.jpg);
+}
+.trousers-five {
+  background-image: url(../images/trousers5.jpg);
+}
+.trousers-six {
+  background-image: url(../images/trousers6.jpg);
+}
+.trousers-seven {
+  background-image: url(../images/trousers7.jpg);
+}
+.trousers-eight {
+  background-image: url(../images/trousers8.jpg);
+
+}
+.trousers-nine {
+  background-image: url(../images/trousers9.jpg);
+}
+.trousers-ten {
+  background-image: url(../images/trousers10.jpg);
+}
+.trousers-eleven {
+  background-image: url(../images/trousers11.jpg);
+
+}
+
+.trousers-twelve {
+background-image: url(../images/trousers12.jpg);
+}
+
+/*trousers ends*/
+
+/*bags section*/
+.bags-one {
+  background-image: url(../images/bags1.jpg);
+}
+.bags-two {
+  background-image: url(../images/bags2.jpg);
+}
+.bags-three {
+  background-image: url(../images/bags3.jpg);
+}
+.bags-four {
+  background-image: url(../images/bags4.jpg);
+}
+.bags-five {
+  background-image: url(../images/bags5.jpg);
+}
+.bags-six {
+  background-image: url(../images/bags6.jpg);
+}
+.bags-seven {
+  background-image: url(../images/bags7.jpg);
+}
+.bags-eight {
+  background-image: url(../images/bags8.jpg);
+
+}
+.bags-nine {
+  background-image: url(../images/bags9.jpg);
+}
+.bags-ten {
+  background-image: url(../images/bags10.jpg);
+}
+.bags-eleven {
+  background-image: url(../images/bags11.jpg);
+
+}
+
+.bags-twelve {
+background-image: url(../images/bags12.webp);
+}
+
+/*bags ends*/
+
+/*accessories section*/
+.accessories-one {
+  background-image: url(../images/accessories1.jpg);
+}
+.accessories-two {
+  background-image: url(../images/accessories2.jpg);
+}
+.accessories-three {
+  background-image: url(../images/accessories3.jpg);
+}
+.accessories-four {
+  background-image: url(../images/accessories4.jpg);
+}
+.accessories-five {
+  background-image: url(../images/accessories5.jpg);
+}
+.accessories-six {
+  background-image: url(../images/accessories6.jpg);
+}
+.accessories-seven {
+  background-image: url(../images/accessories7.jpg);
+}
+.accessories-eight {
+  background-image: url(../images/accessories8.jpg);
+
+}
+.accessories-nine {
+  background-image: url(../images/accessories14.jpg);
+}
+.accessories-ten {
+  background-image: url(../images/accessories10.jpg);
+}
+.accessories-eleven {
+  background-image: url(../images/accessories11.jpg);
+
+}
+
+.accessories-twelve {
+background-image: url(../images/accessories12.jpg);
+}
+
+/*accessories ends*/
+
+/*shoes section*/
+.shoes-one {
+  background-image: url(../images/shoes1.jpeg);
+}
+.shoes-two {
+  background-image: url(../images/shoes2.jpg);
+}
+.shoes-three {
+  background-image: url(../images/shoes3.jpg);
+}
+.shoes-four {
+  background-image: url(../images/shoes4.jpg);
+}
+.shoes-five {
+  background-image: url(../images/shoes5.jpg);
+}
+.shoes-six {
+  background-image: url(../images/shoes6.jpg);
+}
+.shoes-seven {
+  background-image: url(../images/shoes7.jpg);
+}
+.shoes-eight {
+  background-image: url(../images/shoes8.jpg);
+
+}
+.shoes-nine {
+  background-image: url(../images/shoes9.jpg);
+}
+.shoes-ten {
+  background-image: url(../images/shoes10.jpeg);
+}
+.shoes-eleven {
+  background-image: url(../images/shoes11.jpg);
+
+}
+
+.shoes-twelve {
+background-image: url(../images/shoes14.5.jpg);
+}
+.shoes-thirteen {
+  background-image: url(../images/shoes13.5.jpg);
+}
+.shoes-fourteen {
+  background-image: url(../images/shoes21.jpg);
+}
+.shoes-fifteen {
+  background-image: url(../images/shoes15.jpg);
+
+}
+.shoes-sixteen {
+  background-image: url(../images/shoes16.jpg);
+}
+.shoes-seventeen {
+  background-image: url(../images/shoes17.jpg);
+}
+.shoes-eighteen {
+  background-image: url(../images/shoes18.jpg);
+
+}
+
+.shoes-nineteen {
+background-image: url(../images/shoes19.jpg);
+}
+.shoes-twenty {
+  background-image: url(../images/shoes20.jpg);
+  }
+
+/*shoes ends*/
+
+/*slippers section*/
+
+.slippers-one {
+  background-image: url(../images/slippers1.jpg);
+}
+.slippers-two {
+  background-image: url(../images/slippers2.jpg);
+}
+.slippers-three {
+  background-image: url(../images/slippers3.jpg);
+}
+.slippers-four {
+  background-image: url(../images/slippers4.jpg);
+}
+.slippers-five {
+  background-image: url(../images/slippers5.jpg);
+}
+.slippers-six {
+  background-image: url(../images/slippers6.jpg);
+}
+.slippers-seven {
+  background-image: url(../images/slippers7.jpg);
+}
+.slippers-eight {
+  background-image: url(../images/slippers13.jpg);
+
+}
+.slippers-nine {
+  background-image: url(../images/slippers9.jpg);
+}
+.slippers-ten {
+  background-image: url(../images/slippers10.jpg);
+}
+.slippers-eleven {
+  background-image: url(../images/slippers11.jpg);
+
+}
+
+.slippers-twelve {
+background-image: url(../images/slippers12.jpg);
+}
+
+/*slippers ends*/
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  animation-name: slideright;
+  animation-duration: 2s;
+  margin: 0%;
+  bottom: 25px;
+}
+
+.card {
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.card:hover{
+  background-color: none;
+  filter: none;
+  transform: scale(1.06);
+}
+
+@keyframes slideright {
+  from {transform: translateX(100%);}
+}
+
+.card-img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-info {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-btn {
+  background-color: black;
+  color: yellow;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+}
+
+.card-btn:hover {
+  background-color: green;
+  color: #ffff;
+}
+
+.card-content h1{
+  font-size:large;
+}
+
+
+.bookingCol {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #948888;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 5%;
+  }
+  
+  .bookingCol h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .bookingCol form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bookingCol input{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .bookingCol button[type="submit"] {
+    background-color: black;
+    color: yellow;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
+
+  .bookingCol button[type="submit"]:hover{
+    background-color: blue;
+    color: brown;
+  }
+
+  
+
+aside {
+  display: flex;
+  justify-content: center; /* Center the filters horizontally */
+  align-items: center;
+  padding: 5px;
+  margin-top: 10%; /* Adjust this value as needed */
+  max-width: 800px; /* Set a maximum width for the aside element */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-filter {
+  width: 100%; /* Adjust width as needed */
+  margin: 0 15px; /* Adjust margin to bring filters closer together */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.category-dropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.category-dropdown:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.animate_animated {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.animate_fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-btn.card-btn i {
+  margin-left: 10px;
+  font-size: 18px;
+  color: yellow;
+  background-color: yellow;
+}
+
+  .bottom-nav {
+  position: fixed;
+  bottom: 0px; /* space above bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  gap: 100px; /* space between icons */
+  border-radius: 30px;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item img {
+  width: 24px;
+  height: 24px;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.modal-content {
+  position: relative;
+  max-width: 450px;
+  margin: auto;
+  padding: 20px;
+  background-color: #948888;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 8%;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.modal-content input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content button[type="submit"] {
+  background-color: black;
+  color: yellow;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 95%;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color:#ccc;
+  color:black;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.form-group h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.modal-content a{
+  text-decoration: none;
+  list-style-type: none;
+  color: #1818bd99;
+}
+
+#cartModal {
+  position: fixed;
+  right: 0;
+  top: -15%;
+  width: 400px;
+  height: 100vh;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 15%;
+}
+
+#cartModal.hidden {
+  display: none;
+}
+
+.cart-modal-content {
+  padding: 20px;
+}
+
+.cart-modal-content h2 {
+  margin-top: 0;
+}
+
+.cart-modal-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cart-modal-content input, .cart-modal-content select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.cart-modal-content button[type="submit"] {
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-modal-content button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+  
+  @media (max-width: 480px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+  .card-img {
+    height: 150px;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+  .card-info {
+    font-size: 14px;
+  }
+  .card-btn {
+    padding: 10px 20px;
+  }
+
+  .modal-content {
+    width: 98%;
+    padding: 10px;
+    margin-top: 20%;
+  }
+
+  .modal-content input {
+    width: 85%;
+    padding: 6px;
+  }
+
+  .modal-content button[type="submit"] {
+    width: 85%;
+    padding: 6px 10px;
+  }
+
+  .close {
+    font-size: 18px;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+/* iPhone 5 / SE 2016 (320x568) */
+@media screen and (max-width: 320px) and (max-height: 568px) {
+  .card {
+    min-height: 300px;
+  }
+
+  .card-img {
+    max-height: 120px;
+    object-fit: cover;
+  }
+
+  .card-btn {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .bottom-nav {
+  position: fixed;
+  bottom: 0px; /* space above bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  gap: 60px; /* space between icons */
+  border-radius: 30px;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+}
+
+
+  @media only screen and (max-width: 768px){
+
+    .modal-content {
+    width: 95%;
+    padding: 15px;
+    margin-top: 30%;
+  }
+
+  .modal-content input {
+    width: 90%;
+    padding: 8px;
+  }
+
+  .modal-content button[type="submit"] {
+    width: 90%;
+    padding: 8px 15px;
+  }
+
+  .close {
+    font-size: 20px;
+    top: 5px;
+    right: 5px;
+  }
+
+
+ 
+  .modal {
+    width: 95%;
+  }
+
+
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 25px;
+  }
+  .card {
+    width: 49%;
+    margin: 0.5%;
+     box-sizing: border-box;
+  }
+
+nav {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+  }
+  
+  nav h3 {
+    padding-left: 0; /* Remove padding-left */
+    margin-bottom: 10px; /* Add some space between h3 and search bar */
+    margin-top: 10px;
+  }
+  
+  #search-bar {
+    width: 100%; /* Make search bar full width */
+    margin-bottom: 14px;
+  }
+
+  .category-filter {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 25%;
+  }
+  
+  .category-dropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0px; /* space above bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  gap: 80px; /* space between icons */
+  border-radius: 30px;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+  }
+  
