@@ -9,16 +9,26 @@
 </head>
 <body>
 
-    <section class="header">
+<section class="header">
+  <nav>
+    <h3>BoysWears</h3>
+    <input type="search" id="search-bar" name="search-bar" placeholder="Search for a product...">
+    <div class="nav-icons">
+      
+      <a href="#" class="nav-item" onclick="toggleLoginForm(event)">
+        <img src="images/images/user.png" alt="User Icon" style="width: 20px; height: 20px; margin-right: 60px;">
+      </a>
+      <a href="#" class="nav-item" onclick="toggleCartForm(event)" style="position: relative;">
+        <img src="images/images/shopping-cart.png" alt="Icon 3" style="width: 20px; height: 20px; margin-right: 60px;">
+        <span id="cart-count" style="position: absolute; top: -10px; right: 40px; background-color: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px;"></span>
+      </a>
+      <a href="#" class="nav-item" onclick="toggleCartForm(event)">
+        <img src="images/images/shopping-bag.png" alt="Icon 4" style="width: 20px; height: 20px;">
+      </a>
+    </div>
+  </nav>
+</section>
 
-        <nav class="nav">
-            <h3>BoysWears</h3>   
-            <input type="search" id="search-bar" name="search-bar" placeholder="Search for a product...">
-          
-        </nav>
-
-
-     </section>
 
    
 
@@ -44,12 +54,8 @@
               
               <div class="category-filter animate__animated animate__fadeIn" id="categoryFilter2">
                 <select class="category-dropdown" id="categoryDropdown2">
-                    <option value="">Timepices & Jewelry</option>
+                    <option value="allAccessories.html">All Accessories</option>
                     <option value="watches.html">Watches</option>
-                    <option value="chains.html">Chains</option>
-                    <option value="earrings.html">Earrings</option>
-                    <option value="necklaces.html">Necklaces</option>
-                    <option value="bracelets.html">Bracelets</option>
                 </select>
               </div>
              </aside>
@@ -60,44 +66,52 @@
         <div class="card">
           <div class="card-img hoodies-one"></div>
           <div class="card-content">
-            <h1 class="card-title">Quality Suits</h1>
+            <h1 class="card-title">Hoodies</h1>
             <p class="card-info">
-              GH₵1,200.00
+              GH₵250.00
 
             </p>
-            <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+            <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+              <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+            </a>
 
           </div>
         </div>
         <div class="card">
           <div class="card-img hoodies-two"></div>
           <div class="card-content">
-            <h1 class="card-title">Denin Jacket</h1>
+            <h1 class="card-title">Hoodies</h1>
             <p class="card-info">
               GH₵450.00
             </p>
-            <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+            <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+              <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+            </a>
           </div>
         </div>
         <div class="card">
           <div class="card-img hoodies-three"></div> 
           <div class="card-content">
-            <h1 class="card-title">Denin Jacket</h1>
+            <h1 class="card-title">Hoodies</h1>
             <p class="card-info">
-              GH₵450.00
+              GH₵580.00
             </p>
-            <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+            <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+              <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+            </a>
           </div>
         </div>
 
         <div class="card">
           <div class="card-img hoodies-four"></div> 
           <div class="card-content">
-            <h1 class="card-title">Denin Jacket</h1>
+            <h1 class="card-title">Hoodies</h1>
             <p class="card-info">
-              GH₵450.00
+              GH₵400.00
             </p>
-            <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+            <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+              <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+            </a>
           </div>
         </div>
 
@@ -108,43 +122,51 @@
           <div class="card">
             <div class="card-img hoodies-five"></div>
             <div class="card-content">
-              <h1 class="card-title">Denin Jacket</h1>
+              <h1 class="card-title">Hoodies</h1>
               <p class="card-info">
-                  GH₵450.00
+                  GH₵350.00
 
               </p>
-              <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+              <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+                <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+              </a>
             </div>
           </div>
           <div class="card">
             <div class="card-img hoodies-six"></div>
             <div class="card-content">
-              <h1 class="card-title">Denin Jacket</h1>
+              <h1 class="card-title">Hoodies</h1>
               <p class="card-info">
-                  GH₵450.00
+                  GH₵390.00
               </p>
-              <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+              <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+                <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+              </a>
             </div>
           </div>
           <div class="card">
             <div class="card-img hoodies-seven"></div>
             <div class="card-content">
-              <h1 class="card-title">Denin Jacket</h1>
+              <h1 class="card-title">Hoodies</h1>
               <p class="card-info">
-                  GH₵450.00
+                  GH₵250.00
               </p>
-              <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+              <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+                <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+              </a>
             </div>
           </div>
 
           <div class="card">
             <div class="card-img hoodies-eight"></div> 
             <div class="card-content">
-              <h1 class="card-title">Denin Jacket</h1>
+              <h1 class="card-title">Hoodies</h1>
               <p class="card-info">
-                GH₵450.00
+                GH₵300.00
               </p>
-              <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+              <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+                <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+              </a>
             </div>
           </div>
 
@@ -155,250 +177,186 @@
             <div class="card">
               <div class="card-img hoodies-nine"></div>
               <div class="card-content">
-                <h1 class="card-title">Denin Jacket</h1>
+                <h1 class="card-title">Hoodies</h1>
                 <p class="card-info">
-                    GH₵450.00
+                    GH₵500.00
   
                 </p>
-                <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+                  <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+                </a>
               </div>
             </div>
             <div class="card">
               <div class="card-img hoodies-ten"></div>
               <div class="card-content">
-                <h1 class="card-title">Denin Jacket</h1>
+                <h1 class="card-title">Hoodies</h1>
                 <p class="card-info">
-                    GH₵450.00
+                    GH₵720.00
                 </p>
-                <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+                  <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+                </a>
               </div>
             </div>
             <div class="card">
               <div class="card-img hoodies-eleven"></div>
               <div class="card-content">
-                <h1 class="card-title">Denin Jacket</h1>
+                <h1 class="card-title">Cotton Hoodies</h1>
                 <p class="card-info">
-                    GH₵450.00
+                    GH₵600.00
                 </p>
-                <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+                  <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+                </a>
               </div>
             </div>
   
             <div class="card">
               <div class="card-img hoodies-twelve"></div> 
               <div class="card-content">
-                <h1 class="card-title">Denin Jacket</h1>
+                <h1 class="card-title">Polyester Hoodies</h1>
                 <p class="card-info">
-                  GH₵450.00
+                  GH₵700.00
                 </p>
-                <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now
+                  <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+                </a>
               </div>
             </div>
           </div>
 
         </section>
-
-
-        <!-- Login Modal -->
-<div id="loginModal" class="modal hidden">
-  <div class="modal-content">
-    <span class="close" onclick="toggleLoginForm(event)">&times;</span>
-    <form>
-      <div class="form-group">
-        <label for="email">Email</label><br><br>
-        <input type="email" id="email" placeholder="Email" required />
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label><br><br>
-        <input type="password" id="password" placeholder="Password" required />
-      </div>
-      <button type="submit">Submit</button>
-      <br>
-      <p>Don't have account?<a href="#" onclick="toggleSignupForm(event)">Sign up</a></p><br>
-      <p>Forgot your password?<a href="#" onclick="toggleResetForm(event)">Reset password</a></p>
-    </form>
-  </div>
-</div>
-
-<!-- Signup Modal -->
-<div id="signupModal" class="modal hidden">
-  <div class="modal-content">
-    <span class="close" onclick="toggleSignupForm(event)">&times;</span>
-    <form>
-      <div class="form-group">
-        <h1>Signup</h1>
-        <label for="name">First Name</label><br>
-        <input type="text" id="name" placeholder="First Name" required />
-      </div>
-       <div class="form-group">
-        <label for="name">Last Name</label><br>
-        <input type="text" id="name" placeholder="Last Name" required />
-      </div>
-            <div class="form-group">
-        <label for="name">Phone</label><br>
-        <input type="text" id="name" placeholder="Phone" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label><br>
-        <input type="email" id="email" placeholder="Email" required />
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label><br>
-        <input type="password" id="password" placeholder="Password" required />
-      </div>
-
-      <button type="submit">Submit</button>
-      <br>
-      <p>Already have an account?<a href="#" onclick="toggleLoginForm(event)">Login</a></p>
-      <p>Forgot your password?<a href="#" onclick="toggleResetForm(event)">Reset password</a></p>
-    </form>
-  </div>
-</div>
-
-<!-- Reset Modal -->
-<div id="resetModal" class="modal hidden">
-  <div class="modal-content">
-    <span class="close" onclick="toggleResetForm(event)">&times;</span>
-    <form>
-      <div class="form-group">
-        <h1>Reset Password</h1>
-        <label for="email">Email</label><br><br>
-        <input type="email" id="email" placeholder="Email" required />
-      </div>
-      <button type="submit">Submit</button>
-      <br>
-      <p>Remember your password?<a href="#" onclick="toggleLoginForm(event)">Login</a></p><br>
-      <p>Don't have account?<a href="#" onclick="toggleSignupForm(event)">Sign up</a></p>
-    </form>
-  </div>
-</div>
-
-
-              <div id="cartModal" class="hidden">
-  <div class="cart-modal-content">
-    <span class="close" onclick="toggleCartForm(event)">&times;</span>
-    <h2>Total: GH₵0.00</h2><br>
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="How should we address you?">
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Provide your current email address.">
-      <label for="phone">Phone Number</label>
-      <input type="number" id="phone" placeholder="Please enter your active phone number">
-      <label for="pickup">Pick up</label>
-      <select id="pickup">
-        <option>Adabraka</option>
-        <!-- Add more options here -->
-      </select>
-      <button type="submit">Continue to pay</button>
-    </form>
-  </div>
-</div>
               
               
               <div class="bottom-nav">
-                <a href="index.html" class="nav-item">
-                  <img src="images/home.png" alt="Icon 1">
+                <a href="boy.html" class="nav-item">
+                  <img src="images/images/home.png" alt="Icon 1">
                 </a>
                 <a href="#" class="nav-item" onclick="toggleLoginForm(event)">
-               <img src="images/user.png" alt="User Icon">
+               <img src="images/images/user.png" alt="User Icon">
                 </a>
 
                 <a href="#" class="nav-item" onclick="toggleLoginForm(event)">
-                 <img src="images/shopping-cart.png" alt="Icon 3">
+                 <img src="images/images/shopping-cart.png" alt="Icon 3">
                 </a>
 
                 <a href="#" class="nav-item" onclick="toggleCartForm(event)">
-                <img src="images/shopping-bag.png" alt="Icon 4">
+                <img src="images/images/shopping-bag.png" alt="Icon 4">
               </a>
               </div>
-              
- 
+<footer>
+  <div class="social-media">
+    <a href="https://www.facebook.com" target="_blank">
+      <i class="fa-brands fa-facebook fa-lg"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+      <i class="fa-brands fa-instagram fa-lg"></i>
+    </a>
+    <a href="https://www.twitter.com" target="_blank">
+      <i class="fa-brands fa-twitter fa-lg"></i>
+    </a>
+  </div>
+  <div class="contact-info">
+    <a href="tel:0597712361">
+      <i class="fa-solid fa-phone"></i> 0597712361
+    </a>
+    <a href="mailto:boyswear@example.com">
+      <i class="fa-solid fa-envelope"></i> boyswear@example.com
+    </a>
+  </div>
+  <div class="copyright">
+    &copy; 2025 BoysWears. All Rights Reserved.
+  </div>
+</footer>
+
+
+
 
 <script>
-  // Redirect when dropdown changes
+  // Redirect for first dropdown
   document.getElementById('categoryDropdown').addEventListener('change', function () {
     if (this.value) {
       window.location.href = this.value;
     }
   });
 
-  // Automatically select current category
+  // Redirect for second dropdown
+  document.getElementById('categoryDropdown2').addEventListener('change', function () {
+    if (this.value) {
+      window.location.href = this.value;
+    }
+  });
+
+  // Automatically select current category for first dropdown
   const currentPage = window.location.pathname.split('/').pop(); // e.g. 'jeans.html'
-  const dropdown = document.getElementById('categoryDropdown');
-  for (let i = 0; i < dropdown.options.length; i++) {
-    if (dropdown.options[i].value === currentPage) {
-      dropdown.selectedIndex = i;
+
+  const dropdown1 = document.getElementById('categoryDropdown');
+  for (let i = 0; i < dropdown1.options.length; i++) {
+    if (dropdown1.options[i].value === currentPage) {
+      dropdown1.selectedIndex = i;
+      break;
+    }
+  }
+
+  // Automatically select current category for second dropdown
+  const dropdown2 = document.getElementById('categoryDropdown2');
+  for (let i = 0; i < dropdown2.options.length; i++) {
+    if (dropdown2.options[i].value === currentPage) {
+      dropdown2.selectedIndex = i;
       break;
     }
   }
 </script>
 
 <script>
-  function toggleLoginForm(e) {
-  if (e) e.preventDefault();
-  document.getElementById("signupModal").classList.add("hidden");
-  document.getElementById("signupModal").style.display = "none";
-  document.getElementById("resetModal").classList.add("hidden");
-  document.getElementById("resetModal").style.display = "none";
-  const modal = document.getElementById("loginModal");
-  if (modal.classList.contains("hidden")) {
-    modal.style.display = "block";
-    modal.classList.remove("hidden");
-  } else {
-    modal.style.display = "none";
-    modal.classList.add("hidden");
-  }
-}
+  const searchInput = document.getElementById('search-bar');
+const products = document.querySelectorAll('.card');
+const noResultsMessage = document.createElement('p');
+noResultsMessage.textContent = 'No results found';
+noResultsMessage.style.display = 'none';
+document.querySelector('.cards').appendChild(noResultsMessage);
 
-function toggleSignupForm(e) {
-  if (e) e.preventDefault();
-  document.getElementById("loginModal").classList.add("hidden");
-  document.getElementById("loginModal").classList.add("hidden");
-  document.getElementById("loginModal").style.display = "none";
-  document.getElementById("resetModal").classList.add("hidden");
-  document.getElementById("resetModal").style.display = "none";
-  const modal = document.getElementById("signupModal");
-  if (modal.classList.contains("hidden")) {
-    modal.style.display = "block";
-    modal.classList.remove("hidden");
-  } else {
-    modal.style.display = "none";
-    modal.classList.add("hidden");
-  }
-}
+searchInput.addEventListener('input', () => {
+  const searchQuery = searchInput.value.toLowerCase();
+  let resultsFound = false;
 
-function toggleResetForm(e) {
-  if (e) e.preventDefault();
-  document.getElementById("loginModal").classList.add("hidden");
-  document.getElementById("loginModal").style.display = "none";
-  document.getElementById("signupModal").classList.add("hidden");
-  document.getElementById("signupModal").style.display = "none";
-  const modal = document.getElementById("resetModal");
-  if (modal.classList.contains("hidden")) {
-    modal.style.display = "block";
-    modal.classList.remove("hidden");
+  products.forEach((product) => {
+    const productName = product.querySelector('.card-title').textContent.toLowerCase();
+
+    if (productName.includes(searchQuery)) {
+      product.style.display = 'block';
+      resultsFound = true;
+    } else {
+      product.style.display = 'none';
+    }
+  });
+
+  if (!resultsFound && searchInput.value !== '') {
+    noResultsMessage.style.display = 'block';
   } else {
-    modal.style.display = "none";
-    modal.classList.add("hidden");
+    noResultsMessage.style.display = 'none';
   }
-}
+});
 </script>
-
 
 <script>
-  function toggleCartForm(e) {
-  if (e) e.preventDefault();
-  const modal = document.getElementById("cartModal");
-  if (modal.classList.contains("hidden")) {
-    modal.style.display = "block";
-    modal.classList.remove("hidden");
-  } else {
-    modal.style.display = "none";
-    modal.classList.add("hidden");
+  function viewProductDetails(name, price, description, image) {
+    window.location.href = `product-details.html?name=${name}&price=${price}&description=${description}&image=${image}`;
   }
+</script>
+
+<script>
+const cartCountSpan = document.getElementById('cart-count');
+const cartCount = localStorage.getItem('cartCount');
+if (cartCount > 0) {
+  cartCountSpan.textContent = cartCount;
+  cartCountSpan.style.display = 'block';
+} else {
+  cartCountSpan.style.display = 'none';
 }
 </script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
