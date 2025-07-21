@@ -1,0 +1,128 @@
+<!-- payment.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment</title>
+  
+
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  .payment-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .payment-method {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  select {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #pay-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  #pay-btn:hover {
+    background-color: #3e8e41;
+  }
+</style>
+</head>
+<body>
+  <div class="payment-container">
+    <h2>Payment Details</h2>
+    <form id="payment-form">
+      <div class="payment-method">
+        <label for="payment-method">Select Payment Method:</label>
+        <select id="payment-method" name="payment-method">
+          <option value="mobile-money">Mobile Money</option>
+          <option value="bank-transfer">Bank Transfer</option>
+          <option value="card">Card</option>
+        </select>
+      </div>
+      <div id="mobile-money-details" style="display: block;">
+        <label for="mobile-money-number">Mobile Money Number:</label>
+        <input type="text" id="mobile-money-number" name="mobile-money-number">
+      </div>
+      <div id="bank-transfer-details" style="display: none;">
+        <p>Bank Transfer Details:</p>
+        <p>Account Number: 1234567890</p>
+        <p>Bank Name: Example Bank</p>
+      </div>
+      <div id="card-details" style="display: none;">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number">
+        <label for="card-expiration">Expiration Date:</label>
+        <input type="text" id="card-expiration" name="card-expiration">
+        <label for="card-cvv">CVV:</label>
+        <input type="text" id="card-cvv" name="card-cvv">
+      </div>
+      <button id="pay-btn">Pay Now</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('payment-method').addEventListener('change', (e) => {
+      const paymentMethod = e.target.value;
+      if (paymentMethod === 'mobile-money') {
+        document.getElementById('mobile-money-details').style.display = 'block';
+        document.getElementById('bank-transfer-details').style.display = 'none';
+        document.getElementById('card-details').style.display = 'none';
+      } else if (paymentMethod === 'bank-transfer') {
+        document.getElementById('mobile-money-details').style.display = 'none';
+        document.getElementById('bank-transfer-details').style.display = 'block';
+        document.getElementById('card-details').style.display = 'none';
+      } else if (paymentMethod === 'card') {
+        document.getElementById('mobile-money-details').style.display = 'none';
+        document.getElementById('bank-transfer-details').style.display = 'none';
+        document.getElementById('card-details').style.display = 'block';
+      }
+    });
+
+    document.getElementById('pay-btn').addEventListener('click', (e) => {
+      e.preventDefault();
+      // Add payment logic here
+      alert('Payment successful!');
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
