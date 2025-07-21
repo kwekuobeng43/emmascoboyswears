@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Details</title>
+
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .product-details {
+      width: 80%;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-details img {
+      width: 400px;
+      height: 400px; 
+      object-fit: cover; 
+      border-radius: 10px;
+    }
+
+    #addToCartBtn {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      width: 130px;
+      margin-top: 20px;
+    }
+
+    #addToCartBtn:hover {
+      background-color: #3e8e41;
+    }
+
+    #decrementQuantity, #incrementQuantity {
+      background-color: #f0f0f0;
+      border: none;
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+
+    #decrementQuantity:hover, #incrementQuantity:hover {
+      background-color: #ddd;
+    }
+
+    #quantity {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="product-details">
+  <img id="productImage" src="" alt="Product Image">
+  <h2 id="productName"></h2>
+  <p id="productPrice"></p>
+  <p id="productDescription"></p>
+  <div>
+    <button id="decrementQuantity">-</button>
+    <span id="quantity">1</span>
+    <button id="incrementQuantity">+</button>
+  </div>
+  <button id="addToCartBtn">Add to Cart</button>
+</div>
+
+<button id="backBtn" onclick="window.location.href='index.html'">Back</button>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+const productName = urlParams.get('name');
+const productPrice = urlParams.get('price');
+const productDescription = urlParams.get('description');
+const productImage = urlParams.get('image');
+
+document.getElementById('productName').textContent = productName;
+document.getElementById('productPrice').textContent = productPrice;
+document.getElementById('productDescription').textContent = productDescription;
+document.getElementById('productImage').src = productImage;
+
+let quantity = 1;
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+document.getElementById('decrementQuantity').addEventListener('click', () => {
+  if (quantity > 1) {
+    quantity--;
+    document.getElementById('quantity').textContent = quantity;
+  }
+});
+
+document.getElementById('incrementQuantity').addEventListener('click', () => {
+  quantity++;
+  document.getElementById('quantity').textContent = quantity;
+});
+
+document.getElementById('addToCartBtn').addEventListener('click', () => {
+  const productName = document.getElementById('productName').textContent;
+  const productPrice = document.getElementById('productPrice').textContent;
+  const productImage = document.getElementById('productImage').src;
+
+  const existingProduct = cart.find((product) => product.name === productName);
+  if (existingProduct) {
+    existingProduct.quantity += quantity;
+  } else {
+    cart.push({ name: productName, price: productPrice, image: productImage, quantity: quantity });
+  }
+
+  localStorage.setItem('cart', JSON.stringify(cart));
+  localStorage.setItem('cartCount', cart.reduce((acc, product) => acc + product.quantity, 0));
+  alert('Product added to cart!');
+});
+</script>
+
+</body>
+</html>
