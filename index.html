@@ -6,22 +6,35 @@
     <title>BoysWear</title>
     <link rel="stylesheet" href="CSS/boy.css">
       <script src="https://kit.fontawesome.com/c0a8c3a25b.js" crossorigin="anonymous"></script>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
       
 </head>
 
 <body>
-    
-     <section class="header">
 
-        <nav class="nav">
-          
-            <h3>BoysWears22</h3>
-              <input type="search" id="search-bar" name="search-bar" placeholder="Search for a product...">
-        
-        </nav>
+<section class="header">
+  <nav>
+    <h3>BoysWears</h3>
+
+    <input type="search" id="search-bar" name="search-bar" placeholder="Search for a product...">
+    <div class="nav-icons">
+      
+      <a href="#" class="nav-item" onclick="toggleLoginForm(event)">
+        <img src="images/images/user.png" alt="User Icon" style="width: 20px; height: 20px; margin-right: 60px;">
+      </a>
+      <a href="cart.html" class="nav-item" onclick="toggleCartForm(event)" style="position: relative;">
+        <img src="images/images/shopping-cart.png" alt="Icon 3" style="width: 20px; height: 20px; margin-right: 60px;">
+        <span id="cart-count" style="position: absolute; top: -10px; right: 40px; background-color: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px;"></span>
+      </a>
+      <a href="#" class="nav-item" onclick="toggleCartForm(event)">
+        <img src="images/images/shopping-bag.png" alt="Icon 4" style="width: 20px; height: 20px;">
+      </a>
+    </div>
+  </nav>
+</section>
 
 
-     </section>
     
   <aside>
   <div class="category-filter animate__animated animate__fadeIn" id="categoryFilter1">
@@ -44,62 +57,72 @@
               
               <div class="category-filter animate__animated animate__fadeIn" id="categoryFilter2">
                 <select class="category-dropdown" id="categoryDropdown2">
-                    <option value="">All Accessories</option>
+                    <option value="allAccessories.html">All Accessories</option>
                     <option value="watches.html">Watches</option>
-                    <option value="chains.html">Chains</option>
-                    <option value="earrings.html">Earrings</option>
-                    <option value="necklaces.html">Necklaces</option>
-                    <option value="bracelets.html">Bracelets</option>
                 </select>
               </div>
              </aside>
 
-           <section class="services">
+           <section class="services" data-aos="fade-up"
+     data-aos-duration="6000">
       
                 <div class="cards">
                   <div class="card">
-                    <div class="card-img img-one"></div>
+                    <div class="card-img img-one" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                     <div class="card-content">
                       <h1 class="card-title">Denim Jacket</h1>
                       <p class="card-info">
-                        GH₵300.00
+                        GH₵350.00
     
                       </p>
-                    
-                      <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
-
+                    <!--<a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">
+  Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;">
+</a>-->
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Denim Jacket', 'GH₵350.00', 'This is a denim jacket product.', 'images/images/img1.avif')">Buy now</a>
                     </div>
                   </div>
+                
+
+                             
                   <div class="card">
-                    <div class="card-img img-two"></div>
+                    <div class="card-img img-two" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                     <div class="card-content">
                       <h1 class="card-title">Denim Jacket</h1>
                       <p class="card-info">
                         GH₵400.00
                       </p>
                     
-                          <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                          
+   
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Denim Jacket', 'GH₵400.00', 'Denim jacket product description.', 'images/images/img2.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                     </div>
                   </div>
                   <div class="card">
-                    <div class="card-img img-three"></div> 
+                    <div class="card-img img-three" data-aos="fade-up"
+     data-aos-duration="6000"></div> 
                     <div class="card-content">
                       <h1 class="card-title">Kujay</h1>
                       <p class="card-info">
                         GH₵110.00
                       </p>
-                      <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                      
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Kujay', 'GH₵110.00', 'Kujay product description.', 'images/images/img3.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                     </div>
                   </div>
 
                   <div class="card">
-                    <div class="card-img img-four"></div> 
+                    <div class="card-img img-four" data-aos="fade-up"
+     data-aos-duration="6000"></div> 
                     <div class="card-content">
                       <h1 class="card-title">Bucket Hat</h1>
                       <p class="card-info">
                         GH₵100.00
                       </p>
-                      <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Bucket Hat', 'GH₵100.00', 'Bucket hat product description.', 'images/images/img4.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
+    
                     </div>
                   </div>
 
@@ -108,7 +131,8 @@
 
                 <div class="cards">
                     <div class="card">
-                      <div class="card-img img-five"></div>
+                      <div class="card-img img-five" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                       <div class="card-content">
                         <h1 class="card-title">Baseball Cap</h1>
                         <p class="card-info">
@@ -116,83 +140,90 @@
       
                         </p>
                         
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Baseball Cap', 'GH₵85.00', 'Baseball cap product description.', 'images/images/img5.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
-                      <div class="card-img img-six"></div>
+                      <div class="card-img img-six" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                       <div class="card-content">
                         <h1 class="card-title">Hip Pop Cap</h1>
                         <p class="card-info">
                             GH₵90.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Hip Pop Cap', 'GH₵90.00', 'Hip pop cap product description.', 'images/images/img6.avif')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
-                      <div class="card-img img-seven"></div>
+                      <div class="card-img img-seven"data-aos="fade-up"
+     data-aos-duration="6000" ></div>
                       <div class="card-content">
                         <h1 class="card-title">Flying Ties</h1>
                         <p class="card-info">
                             GH₵40.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+ <a href="#" class="main-btn card-btn" onclick="viewProductDetails('Flying Ties', 'GH₵40.00', 'Flying ties product description.', 'images/images/img7.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
 
                     <div class="card">
-                      <div class="card-img img-eight"></div> 
+                      <div class="card-img img-eight"data-aos="fade-up"
+     data-aos-duration="6000" ></div> 
                       <div class="card-content">
                         <h1 class="card-title">Bow Ties</h1>
                         <p class="card-info">
                           GH₵25.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Bow Ties', 'GH₵25.00', 'Bow ties product description.', 'images/images/img8.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                    </div>
 
                   <div class="cards">
                     <div class="card">
-                      <div class="card-img img-nine"></div>
+                      <div class="card-img img-nine" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                       <div class="card-content">
                         <h1 class="card-title">Hats</h1>
                         <p class="card-info">
                             GH₵120.00
-      
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Hats', 'GH₵120.00', 'Hats product description.', 'images/images/img9.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
-                      <div class="card-img img-ten"></div>
+                      <div class="card-img img-ten" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                       <div class="card-content">
                         <h1 class="card-title">Leather Belts</h1>
                         <p class="card-info">
                             GH₵90.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Leather Belts', 'GH₵90.00', 'Leather belts product description.', 'images/images/img10.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
-                      <div class="card-img img-eleven"></div>
+                      <div class="card-img img-eleven" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                       <div class="card-content">
                         <h1 class="card-title">Cotton Singlets</h1>
                         <p class="card-info">
                             GH₵150.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Cotton Singlets', 'GH₵150.00', 'Cotton singlets product description.', 'images/images/img11.png')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
 
                     <div class="card">
-                      <div class="card-img img-twelve"></div> 
+                      <div class="card-img img-twelve" data-aos="fade-up"
+     data-aos-duration="6000"></div> 
                       <div class="card-content">
                         <h1 class="card-title">Boxer Shorts</h1>
                         <p class="card-info">
                           GH₵100.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                      
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Boxer Shorts', 'GH₵100.00', 'Boxer shorts product description.', 'images/images/img12.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
 
@@ -201,45 +232,51 @@
 
                   <div class="cards">
                     <div class="card">
-                      <div class="card-img img-thirteen"></div>
+                      <div class="card-img img-thirteen" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                       <div class="card-content">
                         <h1 class="card-title">Plastic Wardrobe</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵350.00
       
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+ <a href="#" class="main-btn card-btn" onclick="viewProductDetails('Plastic Wardrobe', 'GH₵350.00', 'Plastic wardrobe product description.', 'images/images/wardro.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
-                      <div class="card-img img-fourteen"></div>
+                      <div class="card-img img-fourteen" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Towel</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵100.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Towel', 'GH₵100.00', 'Towel product description.', 'images/images/img14.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
-                      <div class="card-img img-fifteen"></div>
+                      <div class="card-img img-fifteen" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Long-Sleeve</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵150.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                  
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Long-Sleeve', 'GH₵150.00', 'Long-sleeve product description.', 'images/images/img15.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
 
                     <div class="card">
-                      <div class="card-img img-sixteen"></div> 
+                      <div class="card-img img-sixteen" data-aos="fade-up"
+     data-aos-duration="6000"></div> 
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Round-neck T-Shirt</h1>
                         <p class="card-info">
-                          GH₵450.00
+                          GH₵110.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                  
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Round-neck T-Shirt', 'GH₵110.00', 'Round-neck t-shirt product description.', 'images/images1/white-tshirt.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
 
@@ -248,45 +285,51 @@
 
                   <div class="cards">
                     <div class="card">
-                      <div class="card-img img-seventeen"></div>
+                      <div class="card-img img-seventeen" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Ribbed Long T-Shirt</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵180.00
       
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                      
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Ribbed Long T-Shirt', 'GH₵180.00', 'Ribbed long t-shirt product description.', 'images/images1/ribbedtshirt.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
-                      <div class="card-img img-eighteen"></div>
+                      <div class="card-img img-eighteen" data-aos="fade-up"
+     data-aos-duration="6000"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Men's Pajamas</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵200.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                      
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Men\'s Pajamas', 'GH₵200.00', 'Men\'s pajamas product description.', 'images/images1/pjama.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-img img-nineteen"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Colorful Socks</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵30.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                  
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Colorful Socks', 'GH₵30.00', 'Colorful socks product description.', 'images/images/img19.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
 
                     <div class="card">
                       <div class="card-img img-twenty"></div> 
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Cotton Handkerchiefs</h1>
                         <p class="card-info">
-                          GH₵450.00
+                          GH₵25.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                    
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Cotton Handkerchiefs', 'GH₵25.00', 'Cotton handkerchiefs product description.', 'images/images/img20.avif')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
 
@@ -297,43 +340,47 @@
                     <div class="card">
                       <div class="card-img img-twenty-one"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Men's Cotton Sweater</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵210.00
       
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                    
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Men\'s Cotton Sweater', 'GH₵210.00', 'Men\'s cotton sweater product description.', 'images/images/img21.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-img img-twenty-two"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Jeans</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵180.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                        
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Jeans', 'GH₵180.00', 'Jeans product description.', 'images/images/img22.jpeg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-img img-twenty-three"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Pants for Men</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵300.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                    
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Pants for Men', 'GH₵300.00', 'Pants for men product description.', 'images/images/img23.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
 
                     <div class="card">
                       <div class="card-img img-twenty-four"></div> 
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Durag Cotton</h1>
                         <p class="card-info">
-                          GH₵450.00
+                          GH₵90.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                        
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Durag Cotton', 'GH₵90.00', 'Durag cotton product description.', 'images/images/img24.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
 
@@ -344,43 +391,47 @@
                     <div class="card">
                       <div class="card-img img-twenty-five"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Men's Sportswear</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵400.00
       
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                        
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Men\'s Sportswear', 'GH₵400.00', 'Men\'s sportswear product description.', 'images/images/img25.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-img img-twenty-six"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Drnin Jacket</h1>
+                        <h1 class="card-title">Shorts</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵200.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                  
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Shorts', 'GH₵200.00', 'Shorts product description.', 'images/images/img26.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-img img-twenty-seven"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Rain Coat</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵190.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                    
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Rain Coat', 'GH₵190.00', 'Rain coat product description.', 'images/images/img27.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
 
                     <div class="card">
                       <div class="card-img img-twenty-eight"></div> 
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Colorful Fitted Sheet</h1>
                         <p class="card-info">
-                          GH₵450.00
+                          GH₵135.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                      
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Colorful Fitted Sheet', 'GH₵135.00', 'Colorful fitted sheet product description.', 'images/images/img28.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     </div>
@@ -389,256 +440,197 @@
                     <div class="card">
                       <div class="card-img img-twenty-nine"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Steam Iron</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵390.98
       
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                      
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Steam Iron', 'GH₵390.98', 'Steam iron product description.', 'images/images/iron.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-img img-thirty"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Drnin Jacket</h1>
+                        <h1 class="card-title">Garment Rack</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵430.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                      
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Garment Rack', 'GH₵430.00', 'Garment rack product description.', 'images/images/rackhangers.avif')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     <div class="card">
                       <div class="card-img img-thirty-one"></div>
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Shoe Polish Spray</h1>
                         <p class="card-info">
-                            GH₵450.00
+                            GH₵70.00
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                  
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Shoe Polish Spray', 'GH₵70.00', 'Shoe polish spray product description.', 'images/images1/spray.jpg')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
 
                     <div class="card">
                       <div class="card-img img-thirty-two"></div> 
                       <div class="card-content">
-                        <h1 class="card-title">Denin Jacket</h1>
+                        <h1 class="card-title">Ironing Board</h1>
                         <p class="card-info">
-                          GH₵450.00
+                          GH₵300.70
                         </p>
-                        <a href="#" class="main-btn card-btn" onclick="toggleLoginForm(event)">Buy now</a>
+                      
+<a href="#" class="main-btn card-btn" onclick="viewProductDetails('Ironing Board', 'GH₵300.70', 'Ironing board product description.', 'images/images/IRONING_BOARD_2.webp')">Buy now <img src="images/images1/shopping-cart (1).png" width="20" height="20" style="text-align: right;"></a>
                       </div>
                     </div>
                     </div>
               </section>
-             <!-- Hidden Login/Signup Form -->
+          
 
 
-<!-- Login Modal -->
-<div id="loginModal" class="modal hidden">
-  <div class="modal-content">
-    <span class="close" onclick="toggleLoginForm(event)">&times;</span>
-    <form>
-      <div class="form-group">
-        <label for="email">Email</label><br><br>
-        <input type="email" id="email" placeholder="Email" required />
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label><br><br>
-        <input type="password" id="password" placeholder="Password" required />
-      </div>
-      <button type="submit">Submit</button>
-      <br>
-      <p>Don't have account?<a href="#" onclick="toggleSignupForm(event)">Sign up</a></p><br>
-      <p>Forgot your password?<a href="#" onclick="toggleResetForm(event)">Reset password</a></p>
-    </form>
-  </div>
-</div>
+        
 
-<!-- Signup Modal -->
-<div id="signupModal" class="modal hidden">
-  <div class="modal-content">
-    <span class="close" onclick="toggleSignupForm(event)">&times;</span>
-    <form>
-      <div class="form-group">
-        <h1>Signup</h1>
-        <label for="name">First Name</label><br>
-        <input type="text" id="name" placeholder="First Name" required />
-      </div>
-       <div class="form-group">
-        <label for="name">Last Name</label><br>
-        <input type="text" id="name" placeholder="Last Name" required />
-      </div>
-            <div class="form-group">
-        <label for="name">Phone</label><br>
-        <input type="text" id="name" placeholder="Phone" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label><br>
-        <input type="email" id="email" placeholder="Email" required />
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label><br>
-        <input type="password" id="password" placeholder="Password" required />
-      </div>
-
-      <button type="submit">Submit</button>
-      <br>
-      <p>Already have an account?<a href="#" onclick="toggleLoginForm(event)">Login</a></p>
-      <p>Forgot your password?<a href="#" onclick="toggleResetForm(event)">Reset password</a></p>
-    </form>
-  </div>
-</div>
-
-<!-- Reset Modal -->
-<div id="resetModal" class="modal hidden">
-  <div class="modal-content">
-    <span class="close" onclick="toggleResetForm(event)">&times;</span>
-    <form>
-      <div class="form-group">
-        <h1>Reset Password</h1>
-        <label for="email">Email</label><br><br>
-        <input type="email" id="email" placeholder="Email" required />
-      </div>
-      <button type="submit">Submit</button>
-      <br>
-      <p>Remember your password?<a href="#" onclick="toggleLoginForm(event)">Login</a></p><br>
-      <p>Don't have account?<a href="#" onclick="toggleSignupForm(event)">Sign up</a></p>
-    </form>
-  </div>
-</div>
-
+<div class="bottom-nav">
+  <a href="#" class="nav-item" onclick="toggleLoginForm(event)">
+    <img src="images/images/user.png" alt="User Icon" style="width: 20px; height: 20px;">
   </a>
-
-  <div id="cartModal" class="hidden">
-  <div class="cart-modal-content">
-    <span class="close" onclick="toggleCartForm(event)">&times;</span>
-    <h2>Total: GH₵0.00</h2><br>
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="How should we address you?">
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Provide your current email address.">
-      <label for="phone">Phone Number</label>
-      <input type="number" id="phone" placeholder="Please enter your active phone number">
-      <label for="pickup">Pick up</label>
-      <select id="pickup">
-        <option>Adabraka</option>
-        <!-- Add more options here -->
-      </select>
-      <button type="submit">Continue to pay</button>
-    </form>
-  </div>
+  <a href="#" class="nav-item" onclick="toggleCartForm(event)">
+    <img src="images/images/shopping-cart.png" alt="Icon 3" style="width: 20px; height: 20px;">
+  </a>
+  <a href="#" class="nav-item" onclick="toggleCartForm(event)">
+    <img src="images/images/shopping-bag.png" alt="Icon 4" style="width: 20px; height: 20px;">
+  </a>
+  <a href="index.html" class="nav-item">
+    <img src="images/images/home.png" alt="Icon 1" style="width: 20px; height: 20px;">
+  </a>
 </div>
 
 
-              <div class="bottom-nav">
-                <a href="index.html" class="nav-item">
-                  <img src="images/home.png" alt="Icon 1">
-                </a>
-                <a href="#" class="nav-item" onclick="toggleLoginForm(event)">
-                <img src="images/user.png" alt="User Icon">
-                </a>
 
-                <a href="#" class="nav-item" onclick="toggleLoginForm(event)">
-               <img src="images/shopping-cart.png" alt="Icon 3">
-                </a>
+              <footer>
+  <div class="social-media">
+    <a href="https://www.facebook.com" target="_blank">
+      <i class="fa-brands fa-facebook fa-lg"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank">
+      <i class="fa-brands fa-instagram fa-lg"></i>
+    </a>
+    <a href="https://www.twitter.com" target="_blank">
+      <i class="fa-brands fa-twitter fa-lg"></i>
+    </a>
+  </div>
+  <div class="contact-info">
+    <a href="tel:0597712361">
+      <i class="fa-solid fa-phone"></i> 0597712361
+    </a>
+    <a href="mailto:boyswear@example.com">
+      <i class="fa-solid fa-envelope"></i> boyswear@example.com
+    </a>
+  </div>
+  <div class="copyright">
+    &copy; 2025 BoysWears. All Rights Reserved.
+  </div>
+</footer>
 
-                <a href="#" class="nav-item" onclick="toggleCartForm(event)">
-                <img src="images/shopping-bag.png" alt="Icon 4">
-              </a>
-              </div>
-              
-         
-
-
-
-<script>
-  // Redirect when dropdown changes
+  <script>
+  // Redirect for first dropdown
   document.getElementById('categoryDropdown').addEventListener('change', function () {
     if (this.value) {
       window.location.href = this.value;
     }
   });
 
-  // Automatically select current category
+  // Redirect for second dropdown
+  document.getElementById('categoryDropdown2').addEventListener('change', function () {
+    if (this.value) {
+      window.location.href = this.value;
+    }
+  });
+
+  // Automatically select current category for first dropdown
   const currentPage = window.location.pathname.split('/').pop(); // e.g. 'jeans.html'
-  const dropdown = document.getElementById('categoryDropdown');
-  for (let i = 0; i < dropdown.options.length; i++) {
-    if (dropdown.options[i].value === currentPage) {
-      dropdown.selectedIndex = i;
+
+  const dropdown1 = document.getElementById('categoryDropdown');
+  for (let i = 0; i < dropdown1.options.length; i++) {
+    if (dropdown1.options[i].value === currentPage) {
+      dropdown1.selectedIndex = i;
       break;
     }
   }
-</script>
 
+  // Automatically select current category for second dropdown
+  const dropdown2 = document.getElementById('categoryDropdown2');
+  for (let i = 0; i < dropdown2.options.length; i++) {
+    if (dropdown2.options[i].value === currentPage) {
+      dropdown2.selectedIndex = i;
+      break;
+    }
+  }
+
+</script>
 
 
 <script>
-  function toggleLoginForm(e) {
-  if (e) e.preventDefault();
-  document.getElementById("signupModal").classList.add("hidden");
-  document.getElementById("signupModal").style.display = "none";
-  document.getElementById("resetModal").classList.add("hidden");
-  document.getElementById("resetModal").style.display = "none";
-  const modal = document.getElementById("loginModal");
-  if (modal.classList.contains("hidden")) {
-    modal.style.display = "block";
-    modal.classList.remove("hidden");
-  } else {
-    modal.style.display = "none";
-    modal.classList.add("hidden");
-  }
-}
+  const searchInput = document.getElementById('search-bar');
+const products = document.querySelectorAll('.card');
+const noResultsMessage = document.createElement('p');
+noResultsMessage.textContent = 'No results found';
+noResultsMessage.style.display = 'none';
+document.querySelector('.cards').appendChild(noResultsMessage);
 
-function toggleSignupForm(e) {
-  if (e) e.preventDefault();
-  document.getElementById("loginModal").classList.add("hidden");
-  document.getElementById("loginModal").classList.add("hidden");
-  document.getElementById("loginModal").style.display = "none";
-  document.getElementById("resetModal").classList.add("hidden");
-  document.getElementById("resetModal").style.display = "none";
-  const modal = document.getElementById("signupModal");
-  if (modal.classList.contains("hidden")) {
-    modal.style.display = "block";
-    modal.classList.remove("hidden");
-  } else {
-    modal.style.display = "none";
-    modal.classList.add("hidden");
-  }
-}
+searchInput.addEventListener('input', () => {
+  const searchQuery = searchInput.value.toLowerCase();
+  let resultsFound = false;
 
-function toggleResetForm(e) {
-  if (e) e.preventDefault();
-  document.getElementById("loginModal").classList.add("hidden");
-  document.getElementById("loginModal").style.display = "none";
-  document.getElementById("signupModal").classList.add("hidden");
-  document.getElementById("signupModal").style.display = "none";
-  const modal = document.getElementById("resetModal");
-  if (modal.classList.contains("hidden")) {
-    modal.style.display = "block";
-    modal.classList.remove("hidden");
+  products.forEach((product) => {
+    const productName = product.querySelector('.card-title').textContent.toLowerCase();
+
+    if (productName.includes(searchQuery)) {
+      product.style.display = 'block';
+      resultsFound = true;
+    } else {
+      product.style.display = 'none';
+    }
+  });
+
+  if (!resultsFound && searchInput.value !== '') {
+    noResultsMessage.style.display = 'block';
   } else {
-    modal.style.display = "none";
-    modal.classList.add("hidden");
+    noResultsMessage.style.display = 'none';
   }
-}
+});
 </script>
 
 <script>
-  function toggleCartForm(e) {
-  if (e) e.preventDefault();
-  const modal = document.getElementById("cartModal");
-  if (modal.classList.contains("hidden")) {
-    modal.style.display = "block";
-    modal.classList.remove("hidden");
-  } else {
-    modal.style.display = "none";
-    modal.classList.add("hidden");
+  function viewProductDetails(name, price, description, image) {
+    window.location.href = `product-details.html?name=${name}&price=${price}&description=${description}&image=${image}`;
   }
-}
 </script>
 
+
+
+
+  <!--<script>
+  const cartCountSpan = document.getElementById('cart-count');
+  const cartCount = localStorage.getItem('cartCount');
+  if (cartCount && cartCount > 0) {
+    cartCountSpan.textContent = cartCount;
+    cartCountSpan.style.display = 'block';
+  } else {
+    cartCountSpan.style.display = 'none';
+  }
+</script>-->
+
+<script>
+  const cartCountSpan = document.getElementById('cart-count');
+  const cartCount = localStorage.getItem('cartCount') || 0;
+  cartCountSpan.textContent = cartCount;
+  cartCountSpan.style.display = 'block';
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
 
 
+**
