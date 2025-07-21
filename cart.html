@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    .cart-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .cart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .cart-header h1 {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .cart-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .cart-list li {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .cart-list li:last-child {
+      border-bottom: none;
+    }
+    .cart-list img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+    .cart-list .product-info {
+      flex-grow: 1;
+    }
+    .cart-list .product-info span {
+      font-weight: bold;
+    }
+    .delete-btn {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .cart-summary {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      text-align: right;
+    }
+    .cart-summary span {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="cart-container">
+    <div class="cart-header">
+      <h1>Cart</h1>
+    </div>
+    <ul class="cart-list" id="cart-list"></ul>
+    <div class="cart-summary">
+      <span>Total:</span>
+      <span id="total-price"></span>
+    </div>
+   
+    <button onclick="window.location.href='payment.html'">Make Payment</button>
+  </div>
+  <button id="back-btn" onclick="window.location.href='index.html'">Back</button>
+
+  <style>
+    #back-btn {
+background-color: #4CAF50;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+font-weight: bold;
+position: absolute;
+top: 10px;
+left: 10px;
+}
+
+#back-btn:hover {
+background-color: #3e8e41;
+}
+  </style>
+
+  <script>
+    // Get the cart from local storage
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Render the cart contents
+    function renderCart() {
+      const cartList = document.getElementById("cart-list");
+      cartList.innerHTML = "";
+      let totalPrice = 0;
+      cart.forEach((product, index) => {
+        const productHTML = `
+          <li>
+            <img src="${product.image}" alt="${product.name}">
+            <div class="product-info">
+              <span>${product.name}</span>
+              <p>Quantity: ${product.quantity}</p>
+              <p>Price: GH₵${product.price.replace('GH₵', '') * product.quantity}</p>
+            </div>
+            <button class="delete-btn" onclick="deleteProduct(${index})">Delete</button>
+          </li>
+        `;
+        cartList.innerHTML += productHTML;
+        totalPrice += parseFloat(product.price.replace('GH₵', '')) * product.quantity;
+      });
+      document.getElementById("total-price").innerHTML = `GH₵${totalPrice}`;
+    }
+
+    // Delete product from cart
+    function deleteProduct(index) {
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart();
+    }
+
+    // Render the cart contents on page load
+    renderCart();
+  </script>
+
+  <script>
+
+// Delete product from cart
+function deleteProduct(index) {
+  cart.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  localStorage.setItem("cartCount", cart.reduce((acc, product) => acc + product.quantity, 0));
+  if (cart.length === 0) {
+    localStorage.setItem("cartCount", 0);
+  }
+  renderCart();
+}
+  </script>
+</body>
+</html>
